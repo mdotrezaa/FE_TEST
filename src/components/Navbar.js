@@ -6,10 +6,9 @@ const Navbar = ({ onLogout }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // Perform logout logic (e.g., clear token)
     localStorage.removeItem("token");
     onLogout();
-    navigate("/login"); // Redirect to login page after logout
+    navigate("/login");
   };
 
   return (

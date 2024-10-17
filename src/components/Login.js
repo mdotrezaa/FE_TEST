@@ -10,10 +10,7 @@ import {
   Box,
 } from "@mui/material";
 import axios from "axios";
-
-// Example logo and illustration URLs (replace with actual images)
-const logoUrl = "https://via.placeholder.com/150"; // Placeholder for logo
-const illustrationUrl = "https://via.placeholder.com/600"; // Placeholder for illustration
+import illustrationImage from "../assets/images/banner.jpg";
 
 const Login = ({ setIsAuthenticated }) => {
   const [username, setUsername] = useState("");
@@ -60,7 +57,6 @@ const Login = ({ setIsAuthenticated }) => {
             padding: 15,
           }}
         >
-          <img src={logoUrl} alt="App Logo" style={{ marginBottom: "20px" }} />
           <Typography variant="h4" component="h1" gutterBottom>
             Login
           </Typography>
@@ -114,13 +110,12 @@ const Login = ({ setIsAuthenticated }) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            padding: 3,
           }}
         >
           <img
-            src={illustrationUrl}
+            src={illustrationImage}
             alt="App Illustration"
-            style={{ maxWidth: "100%", height: "auto" }}
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
         </Grid>
       </Grid>

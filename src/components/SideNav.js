@@ -19,10 +19,10 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 const drawerWidth = 240;
 
 const SideNav = ({ onLogout }) => {
-  const [openReports, setOpenReports] = useState(false); // State for controlling the submenu
+  const [openReports, setOpenReports] = useState(false);
 
   const handleReportsClick = () => {
-    setOpenReports(!openReports); // Toggle the submenu
+    setOpenReports(!openReports);
   };
 
   return (
